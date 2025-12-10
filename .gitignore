@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.fna
+*.faa
+*.fasta
+*.pyc
+*.DS_Store
+data/genomi/
+venv/
+.env
