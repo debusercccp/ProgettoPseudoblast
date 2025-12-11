@@ -5,18 +5,18 @@ Questa nuova versione offre un'architettura modulare e due interfacce di utilizz
 
 Struttura del Progetto
 
-**`run.py`**: Script principale per avviare l'applicazione.
-**`src/`**: Contiene il core logico dell'algoritmo di allineamento.
-**`tui/`**: Interfaccia Utente Testuale (per uso da terminale).
-**`web/`**: Interfaccia Web (per uso tramite browser).
-**`data/`**: Contiene i dataset genomici (es. *T. alexandrinum*).
+`run.py`: Script principale per avviare l'applicazione.
+`src/`: Contiene il core logico dell'algoritmo di allineamento.
+`tui/`: Interfaccia Utente Testuale (per uso da terminale).
+`web/`: Interfaccia Web (per uso tramite browser).
+`data/`: Contiene i dataset genomici (es. *T. alexandrinum*).
 
 Installazione e Utilizzo
 
 1.  Clona il repository:
 
     ```bash
-    git clone https://github.com/debusercccp/PseudoBlast.git
+    git clone https://github.com/~Directoryutente~/PseudoBlast.git
     cd PseudoBlast
     ```
 
