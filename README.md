@@ -16,7 +16,7 @@ Installazione e Utilizzo
 1.  Clona il repository:
 
     ```bash
-    git clone https://github.com/~Directoryutente~/PseudoBlast.git
+    git clone https://github.com/debusercccp/PseudoBlast.git
     cd PseudoBlast
     ```
 
