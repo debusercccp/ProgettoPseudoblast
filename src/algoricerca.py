@@ -1,7 +1,18 @@
 #! /usr/bin/env python3
 
 import os, csv, sys, gc
+import numpy as np
 
+try:
+    from numba import jit
+    HAS_NUMBA = True
+except ImportError:
+    HAS_NUMBA = False
+    # Decoratore "finto" che non fa nulla se Numba manca
+    def jit(*args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
 # ============================================================
 # PARSER FASTA
 # ============================================================
@@ -314,6 +325,7 @@ def search_sequence(query, index, genomes, K, max_mismatch):
 # ============================================================
 # SMITH–WATERMAN (Fuzzy Search)
 # ============================================================
+@jit(nopython=True)
 def smith_waterman(query, target, match=2, mismatch=-1, gap=-1):
     """
     Algoritmo Smith-Waterman per allineamento locale.
